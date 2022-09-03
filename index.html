@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220902204429">
+	<title>Box Shadow</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="ms--animation__content">
+			<div class="ms--animation__logo">
+				<span class="ms--animation__word ms-M ">M</span>
+				<span class="ms--animation__word ms-S">S</span>
+			</div>
+		</div>
+
+		<header class="header" id="header">
+			<div class="header__content">
+				<div class="header__body">
+					<div class="logo">
+						<span class="logo__span-top">Box</span>
+						<span class="logo__span-bottom">Shadow</span>
+					</div>
+
+					<nav class="header__body-menu">
+						<ul class="header__body-list">
+							<li><a href="#" class="header__body-link">CSS Triangle Generate</a></li>
+							<li><a href="#" class="header__body-link">CSS Linear Gradinent</a></li>
+						</ul>
+					</nav>
+
+					<div class="header__body-spoiler body-spoiler body-spoiler--active">
+						<p class="body-spoiler__text">Другие проекты</p>
+						<img src="img/arrowDown.svg" class="body-spoiler__img" alt="arrow-down">
+						<nav class="body-spoiler__menu">
+							<ul>
+								<li><a href="#" class="body-spoiler__link">CSS Triangle Generate</a></li>
+								<li><a href="#" class="body-spoiler__link">CSS Linear Gradinent</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<section class="boxShadow__header">
+				<div class="boxShadow__header-content container">
+					<h1 class="boxShadow__header-title"><span>Box shadow</span> CSS свойство</h1>
+
+					<p class="boxShadow__header-subTitle">
+						<span>box-shadow</span> — это CSS3 свойство, которое позволяет
+						создавать эффект тени для, практически, любого элемента веб страницы. Оно похоже на эффект
+						Drop Shadows в Photoshop, с помощью этого свойства создается иллюзия глубины на 2-мерных
+						страницах.
+					</p>
+
+					<div class="boxShadow__header-spoiler header-spoiler">
+						<img src="img/arrowDown.svg" alt="arrow-down" class="header-spoiler__img">
+						<p class="header-spoiler__text">Показать дальше...</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="boxShadow">
+				<div class="boxShadow__content container">
+
+					<div class="boxShadow__generate">
+
+						<div class="boxShadow__generate-inputWrapper _inputWrapper">
+							<label for="horizontal-length">Смещение по горизонтали:
+								<span class="horizontal-length__out">-5px</span>
+							</label>
+							<input type="range" min="-200" max="200" value="-5" class="horizontal-length"
+								id="horizontal-length">
+						</div>
+
+						<div class="boxShadow__generate-inputWrapper _inputWrapper">
+							<label for="vertical-length">Смещение по вертикали:
+								<span class="vertical-length__out">5px</span>
+							</label>
+							<input type="range" min="-200" value="5" max="200" class="vertical-length"
+								id="vertical-length">
+						</div>
+
+						<div class="boxShadow__generate-inputWrapper _inputWrapper">
+							<label for="blur-radius">Радиус размытия:
+								<span class="blur-radius__out">5px</span>
+							</label>
+							<input type="range" min="0" value="5" max="200" class="blur-radius" id="blur-radius">
+						</div>
+
+						<div class="boxShadow__generate-inputWrapper _inputWrapper">
+							<label for="spread-radius">Радиус распространения:
+								<span class="spread-radius__out">0px</span>
+							</label>
+							<input type="range" min="0" value="0" max="200" class="spread-radius" id="spread-radius">
+						</div>
+
+						<div class="boxShadow__generate-inputWrapper _inputWrapper">
+							<label for="opacity">Прозрачность:
+								<span class="opacity__out">1</span>
+							</label>
+							<input type="range" min="0" value="1" step="0.1" max="1" class="opacity" id="opacity">
+						</div>
+
+					</div>
+
+					<div class="boxShadow__show">
+
+						<div class="boxShadow__show-boxContainer">
+							<div class="boxShadow__show-box box"></div>
+						</div>
+
+						<div class="boxShadow__show-boxSize boxSize-show">
+
+							<div class="boxSize-show__inputWrapper _inputWrapper">
+								<label for="boxSize__width--input">Width: <span class="widthOut">350px</span></label>
+								<input type="range" min="0" max="500" class="boxSize__width--input" value="350"
+									id="boxSize__width--input">
+							</div>
+
+							<div class="boxSize-show__inputWrapper _inputWrapper">
+								<label for="boxSize__height--input">Height: <span class="heightOut">170px</span></label>
+								<input type="range" min="0" value="170" max="500" class="boxSize__height--input"
+									id="boxSize__height--input">
+							</div>
+						</div>
+
+						<div class="boxShadow__show-colors show-colors">
+
+							<div class="show-colors__shadow shadow-colors _colorWrapper">
+								<p class="shadow-colors__shadowText _colorText">Цвет тени:</p>
+								<input type="color" id="shadow--input" value="#f49999"
+									class="shadow--input _inputColor shadow-colors__input _colorInput">
+								<span class="shadow-colors__span _colorSpan">rgba(244,153,153, 1)</span>
+							</div>
+
+							<div class="show-box__shadow box-colors _colorWrapper">
+								<p class="box-colors__boxText _colorText">Цвет элемента:</p>
+								<input type="color" value="#F05454" id="boxColor--input"
+									class=" boxColor--input _inputColor box-colors__input _colorInput">
+								<span class="box-colors__span _colorSpan">#F05454</span>
+							</div>
+
+							<div class="show-colors__bg bg-colors _colorWrapper">
+								<p class="bg-colors__bgText _colorText">Задний фон:</p>
+								<input type="color" value="#fafafa" id="bgColor--input"
+									class="bgColor--input _inputColor bg-colors__input _colorInput">
+								<span class="bg-colors__span _colorSpan">#fafafa</span>
+							</div>
+
+							<div class="boxShadow__show-checkboxWrapper show-checkboxWrapper _colorWrapper">
+								<input type="checkbox" class="show-checkboxWrapper__input boxShadow__show-checkbox"
+									id="boxShadow__show-checkbox">
+								<span class="show-checkboxWrapper__span _outline">Outline</span>
+								<label for="boxShadow__show-checkbox"></label>
+								<span class="show-checkboxWrapper__span _inset">Inset</span>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="boxShadow__cssOut">
+				<div class="boxShadow__cssOut-content container">
+					<h3 class="boxShadow__cssOut-title">Css <span>Code</span></h3>
+					<div class="boxShadow__cssOut-code">
+						.box {
+
+						<div class="boxShadow__cssOut--padding">
+							-webkit-box-shadow:
+							<span class="checkboxOut--cssOut"></span>
+							<span class="horizontal--cssOut">10px</span>
+							<span class="vertical--cssOut">10px</span>
+							<span class="blur--cssOut">5px</span>
+							<span class="spread--cssOut">0</span>
+							<span class="color--cssOut">rgba(244,153,153, 1);</span> <br>
+
+							-moz-box-shadow:
+							<span class="checkboxOut--cssOut"></span>
+							<span class="horizontal--cssOut">10px</span>
+							<span class="vertical--cssOut">10px</span>
+							<span class="blur--cssOut">5px</span>
+							<span class="spread--cssOut">0</span>
+							<span class="color--cssOut">rgba(244,153,153, 1);</span> <br>
+
+							box-shadow:
+							<span class="checkboxOut--cssOut"></span>
+							<span class="horizontal--cssOut">10px</span>
+							<span class="vertical--cssOut">10px</span>
+							<span class="blur--cssOut">5px</span>
+							<span class="spread--cssOut">0</span>
+							<span class="color--cssOut">rgba(244,153,153, 1);</span>
+
+						</div>
+						}
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__content container">
+
+				<div class="footer__copy-content">
+					<div class="footer--MS">
+						<span class="footer__ms-M ">M</span>
+						<span class="footer__ms-S">S</span>
+					</div>
+					<p class="footer__copy">© 2022</p>
+				</div>
+
+				<div class="footer__copy-messages">
+					<P class="footer__copy-text">Мы в соц сетях:</P>
+					<a href="#">
+						<picture>
+							<source srcset="img/youtube.webp" type="image/webp"><img class="footer__copy-youtube"
+								src="img/youtube.png" alt="youtube">
+						</picture>
+					</a>
+					<a href="#"><img class="footer__copy-telegram" src="img/Telegram.svg" alt="telegram"></a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20220902204429"></script>
+</body>
+
+</html>
